@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .aside-section{
+        @apply py-8 border-b border-white border-white ;
+    }
+    .aside-title a{
+        @apply text-white text-2xl font-bold hover:text-SoftOrange duration-300;
+    }
+
+    .aside-title{
+        @apply mb-3;
+    }
+
+    .aside-description{
+        @apply text-GrayishBlue text-[1.18rem];
+    }
+
+    .aside-section:last-child{
+        @apply border-0;
+    }
+}
