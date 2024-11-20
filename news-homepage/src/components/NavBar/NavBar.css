@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .nav-links li{
+        @apply cursor-pointer hover:text-SoftRed duration-300;
+    }
+}
