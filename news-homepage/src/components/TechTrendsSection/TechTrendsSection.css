@@ -8,7 +8,7 @@
   }
 
   .trend-title {
-    @apply text-VeryDarkBlue mb-1 sm:mb-4 md:mb-5 mt-1 sm:mt-3 text-lg sm:text-xl md:text-2xl font-bold hover:text-SoftRed duration-300;
+    @apply text-VeryDarkBlue mb-1 sm:mb-4 md:mb-5 mt-1 sm:mt-3 text-lg sm:text-2xl font-bold hover:text-SoftRed duration-300;
   }
 
   .trend-img img{
@@ -16,6 +16,6 @@
   }
 
   .trend-description {
-    @apply sm:text-[1rem] text-[0.9rem] md:text-[1.18rem] text-DarkGrayishBlue;
+    @apply text-[0.9rem] sm:text-[1.18rem] text-DarkGrayishBlue;
   }
 }

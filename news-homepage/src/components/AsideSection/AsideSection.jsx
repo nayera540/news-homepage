@@ -2,8 +2,8 @@ import './AsideSection.css';
 
 function AsideSection() {
     return (
-        <section className="aside-section w-full md:w-4/12 bg-VeryDarkBlue px-12 pt-10">
-            <h2 className="uppercase text-SoftOrange font-[700] text-5xl">new</h2>
+        <section className="aside-section w-full lg:w-4/12 bg-VeryDarkBlue md:px-12 sm:px-8 px-5 pt-10">
+            <h2 className="uppercase text-SoftOrange font-[700] sm:text-4xl text-3xl md:text-5xl">new</h2>
             <div className="aside-section">
                 <h3 className="aside-title">
                     <a href="" className="">

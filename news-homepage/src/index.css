@@ -12,6 +12,6 @@
 
 @layer components {
   body {
-    @apply bg-OffWhite;
+    @apply bg-OffWhite h-full;
   }
 }

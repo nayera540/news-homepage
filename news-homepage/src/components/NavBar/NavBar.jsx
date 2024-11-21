@@ -1,6 +1,13 @@
 import "./NavBar.css";
 
 function NavBar() {
+    function navToggle() {
+        document.getElementById('navbar-menu').classList.toggle('hidden');
+        document.getElementById('close-btn').classList.toggle('hidden');
+        document.getElementById('menu-btn').classList.toggle('hidden');
+        document.getElementById('navbar-overlay').classList.toggle('hidden');
+        document.body.classList.toggle('overflow-hidden');
+    }
     return (
         <nav className="navbar mt-10 md:mt-20 flex justify-between">
             <div className="logo">
@@ -13,13 +20,44 @@ function NavBar() {
                     </svg>
                 </a>
             </div>
-            <div className="nav-links flex">
-                <ul className="flex justify-between items-center md:space-x-8 text-DarkGrayishBlue">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#new">New</a></li>
-                    <li><a href="#popular">Popular</a></li>
-                    <li><a href="#trending">Trending</a></li>
-                    <li><a href="#categories">Categories</a></li>
+            {/* Hamburger Menu Button */}
+            <button className="md:hidden block transition-transform duration-1000" id="menu-btn" onClick={navToggle}>
+                <svg width="40" height="17" xmlns="http://www.w3.org/2000/svg">
+                    <g fill="#00001A" fillRule="evenodd">
+                        <path d="M0 0h40v3H0zM0 7h40v3H0zM0 14h40v3H0z" />
+                        <path d="M0 0h40v3H0z" />
+                    </g>
+                </svg>
+            </button>
+
+            {/* Close Button */}
+            <button className="md:hidden hidden z-20 transition-transform duration-300" id="close-btn" onClick={navToggle}>
+                    <svg width="32" height="31" xmlns="http://www.w3.org/2000/svg">
+                        <g fill="#00001A" fillRule="evenodd">
+                            <path d="m2.919.297 28.284 28.284-2.122 2.122L.797 2.419z" />
+                            <path d="M.797 28.581 29.081.297l2.122 2.122L2.919 30.703z" />
+                        </g>
+                    </svg>
+                </button>
+                <div className="overlay md:hidden hidden fixed inset-0 bg-black/50 transition-opacity duration-300 z-9" id="navbar-overlay"></div>
+            <div className="nav-links hidden md:flex md:bg-none bg-OffWhite md:static overflow-y-auto absolute w-2/3 md:w-auto -top-10 right-0 md:h-auto h-[150vh] transition-transform duration-300 md:shadow-none md:p-0 pl-10 z-10" id="navbar-menu">
+                <ul className="flex justify-between md:items-center md:mt-0 mt-56 md:flex-row flex-col md:space-x-8 md:space-y-0 space-y-6 text-VeryDarkBlue md:text-base text-xl md:text-DarkGrayishBlue">
+                    <li>
+                        <a href="#home">Home</a>
+                    </li>
+                    <li>
+                        <a href="#new">New</a>
+                    </li>
+                    <li>
+                        <a href="#popular">Popular</a>
+                    </li>
+                    <li>
+                        <a href="#trending">Trending</a>
+                    </li>
+                    <li>
+                        <a href="#categories">Categories</a>
+                    </li>
+                    
                 </ul>
             </div>
         </nav>

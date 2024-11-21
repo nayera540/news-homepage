@@ -12,7 +12,8 @@ export default {
                 "OffWhite": "hsl(36, 100%, 99%)",
                 "GrayishBlue": "hsl(233, 8%, 79%)",
                 "DarkGrayishBlue": "hsl(236, 13%, 42%)",
-                "VeryDarkBlue": "hsl(240, 100%, 5%)"
+                "VeryDarkBlue": "hsl(240, 100%, 5%)",
+                "white-opacity-33": "rgba(255, 255, 255, 0.33)",
         },
         container:{
             center: true,

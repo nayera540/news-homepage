@@ -4,7 +4,7 @@
 
 @layer components{
     .aside-section{
-        @apply py-8 border-b border-white border-white ;
+        @apply py-8 border-b border-white-opacity-33 border-solid ;
     }
     .aside-title a{
         @apply text-white text-2xl font-bold hover:text-SoftOrange duration-300;

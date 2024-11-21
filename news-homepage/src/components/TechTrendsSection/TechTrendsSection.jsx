@@ -2,9 +2,9 @@ import './TechTrendsSection.css';
 
 function TechTrendsSection() {
     return (
-        <section className="tech-trends-section flex flex-wrap md:flex-nowrap md:gap-16 sm:gap-8 gap-6 py-12 md:py-20">
+        <section className="tech-trends-section flex flex-wrap lg:flex-nowrap lg:gap-16 sm:gap-8 gap-6 py-12 md:py-20">
             {/* <!-- First Trend --> */}
-            <div className="tech-trend md:w-4/12 w-full">
+            <div className="tech-trend lg:w-4/12 w-full">
                 <div className="flex flex-nowrap sm:gap-6 gap-3">
                     <div className="trend-img w-1/3">
                         <img src="/assets/images/image-retro-pcs.jpg" alt="PCs trend" />
@@ -21,7 +21,7 @@ function TechTrendsSection() {
                 </div>
             </div>
             {/* <!-- Second Trend --> */}
-            <div className="tech-trend md:w-4/12 w-full">
+            <div className="tech-trend lg:w-4/12 w-full">
                 <div className="flex flex-nowrap sm:gap-6 gap-3">
                     <div className="trend-img w-1/3">
                         <img src="/assets/images/image-top-laptops.jpg" alt="laptops trend" />
@@ -38,7 +38,7 @@ function TechTrendsSection() {
                 </div>
             </div>
             {/* <!-- Third Trend --> */}
-            <div className="tech-trend md:w-4/12 w-full">
+            <div className="tech-trend lg:w-4/12 w-full">
                 <div className="flex flex-nowrap sm:gap-6 gap-3">
                     <div className="trend-img w-1/3">
                         <img src="/assets/images/image-gaming-growth.jpg" alt="gaming growth trend" />

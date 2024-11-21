@@ -3,7 +3,7 @@ import HeroSection from "../HeroSection/HeroSection"
 
 function MainSection() {
     return (
-        <main className="main-section flex flex-wrap gap-8 md:flex-nowrap mt-12">
+        <main className="main-section flex flex-wrap gap-8 lg:flex-nowrap mt-12">
             <HeroSection />
             <AsideSection />
         </main>
